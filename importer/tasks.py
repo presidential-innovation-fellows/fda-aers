@@ -11,6 +11,12 @@ from reports.models import Report, ReportDuplicate, Reaction, Drug
 def boolean_validator(value):
     if value == "1":
         return True
+    else:
+        return False
+        
+def null_boolean_validator(value):
+    if value == "1":
+        return True
     if value == "2":
         return False
     else:
@@ -24,8 +30,12 @@ def datetime_validator(format_code, date):
     elif format_code == "602":
         return datetime.datetime.strptime(date, '%Y')
         
+def int_validator(value):
+    value.lstrip("0")
+    return value
+        
 @task()
-def loader():
+def loader(xmlfile):
     def fast_iter(context, func):
         # http://www.ibm.com/developerworks/xml/library/x-hiperfparse/
         # Author: Liza Daly
@@ -39,11 +49,11 @@ def loader():
     def process_element(elem):
         report = Report()
         try:
-            report.safetyreportid = int(elem.xpath('safetyreportid/text()')[0])
+            report.safetyreportid = int_validator(elem.xpath('safetyreportid/text()')[0])
         except:
             pass
         try:
-            report.safetyreportversion = int(elem.xpath('safetyreportversion/text()')[0])
+            report.safetyreportversion = int_validator(elem.xpath('safetyreportversion/text()')[0])
         except:
             pass
         try:
@@ -60,7 +70,7 @@ def loader():
         except:
             pass
         try:
-            report.reporttype = int(elem.xpath('reporttype/text()')[0])
+            report.reporttype = int_validator(elem.xpath('reporttype/text()')[0])
         except:
             pass
         try:
@@ -98,11 +108,11 @@ def loader():
             pass
         try:
             report.recieptdateformat = str(elem.xpath('receiptdateformat/text()')[0])
-            report.recieptdate = datetime_validator(str(elem.xpath('receiptdateformat/text()')[0]), str(elem.xpath('recieptdate/text()')[0]))
+            report.recieptdate = datetime_validator(str(elem.xpath('receiptdateformat/text()')[0]), str(elem.xpath('receiptdate/text()')[0]))
         except:
             pass
         try:
-            report.fullfillexpeditecriteria = boolean_validator(str(elem.xpath('fullfillexpeditecriteria/text()')[0]))
+            report.fullfillexpeditecriteria = boolean_validator(str(elem.xpath('fulfillexpeditecriteria/text()')[0]))
         except:
             pass
         try:
@@ -114,15 +124,15 @@ def loader():
         except:
             pass
         try:
-            report.duplicate = boolean_validator(str(elem.xpath('duplicate/text()')[0]))
+            report.duplicate = null_boolean_validator(str(elem.xpath('duplicate/text()')[0]))
         except:
             pass
         try:
-            report.qualification = int(elem.xpath('primarysource/qualification/text()')[0])
+            report.qualification = int_validator(elem.xpath('primarysource/qualification/text()')[0])
         except:
             pass
         try:
-            report.sendertype = int(elem.xpath('sender/sendertype/text()')[0])
+            report.sendertype = int_validator(elem.xpath('sender/sendertype/text()')[0])
         except:
             pass
         try:
@@ -130,7 +140,7 @@ def loader():
         except:
             pass
         try:
-            report.receivertype = int(elem.xpath('receiver/receivertype/text()')[0])
+            report.receivertype = int_validator(elem.xpath('receiver/receivertype/text()')[0])
         except:
             pass
         try:
@@ -142,7 +152,7 @@ def loader():
         except:
             pass
         try:
-            report.patientonsetageunit = int(elem.xpath('patient/patientonsetageunit/text()')[0])
+            report.patientonsetageunit = int_validator(elem.xpath('patient/patientonsetageunit/text()')[0])
         except:
             pass
         try:
@@ -150,12 +160,13 @@ def loader():
         except:
             pass
         try:
-            report.patientsex = int(elem.xpath('patient/patientsex/text()')[0])
+            report.patientsex = int_validator(elem.xpath('patient/patientsex/text()')[0])
         except:
             pass
         report.save()
         
         reportduplicates = elem.xpath('reportduplicate')
+        reportduplicates_array = []
         for item in reportduplicates:
             duplicate = ReportDuplicate()
             duplicate.report = Report.objects.get(safetyreportid=report.safetyreportid)
@@ -168,7 +179,7 @@ def loader():
             except:
                 pass
             duplicate.save()
-        
+                    
         reactions = elem.xpath('patient/reaction')
         for item in reactions:
             reaction = Reaction()
@@ -182,7 +193,7 @@ def loader():
             except:
                 pass
             try:
-                reaction.reactionoutcome = int(item.xpath('reactionoutcome/text()')[0])
+                reaction.reactionoutcome = int_validator(item.xpath('reactionoutcome/text()')[0])
             except:
                 pass
             reaction.save()
@@ -192,7 +203,7 @@ def loader():
             drug = Drug()  
             drug.report = Report.objects.get(safetyreportid=report.safetyreportid)
             try:
-                drug.drugcharacterization = int(item.xpath('drugcharacterization/text()')[0])
+                drug.drugcharacterization = int_validator(item.xpath('drugcharacterization/text()')[0])
             except:
                 pass
             try:
@@ -212,7 +223,7 @@ def loader():
             except:
                 pass
             try:
-                drug.drugstructureddosageunit = int(item.xpath('drugstructureddosageunit/text()')[0])
+                drug.drugstructureddosageunit = int_validator(item.xpath('drugstructureddosageunit/text()')[0])
             except:
                 pass
             try:
@@ -224,7 +235,7 @@ def loader():
             except:
                 pass
             try:
-                drug.drugintervaldosagedefinition = int(item.xpath('drugintervaldosagedefinition/text()')[0])
+                drug.drugintervaldosagedefinition = int_validator(item.xpath('drugintervaldosagedefinition/text()')[0])
             except:
                 pass
             try:
@@ -232,7 +243,7 @@ def loader():
             except:
                 pass
             try:
-                drug.drugcumulativedosageunit = int(item.xpath('drugcumulativedosageunit/text()')[0])
+                drug.drugcumulativedosageunit = int_validator(item.xpath('drugcumulativedosageunit/text()')[0])
             except:
                 pass
             try:
@@ -244,7 +255,7 @@ def loader():
             except:
                 pass
             try:
-                drug.drugadministrationroute = int(item.xpath('drugadministrationroute/text()')[0])
+                drug.drugadministrationroute = int_validator(item.xpath('drugadministrationroute/text()')[0])
             except:
                 pass
             try:
@@ -266,22 +277,22 @@ def loader():
             except:
                 pass
             try:
-                drug.drugtreatmentdurationunit = int(item.xpath('drugtreatmentdurationunit/text()')[0])
+                drug.drugtreatmentdurationunit = int_validator(item.xpath('drugtreatmentdurationunit/text()')[0])
             except:
                 pass
             try:
-                drug.actiondrug = int(item.xpath('actiondrug/text()')[0])
+                drug.actiondrug = int_validator(item.xpath('actiondrug/text()')[0])
             except:
                 pass
             try:
-                drug.drugrecurreadministration = boolean_validator(str(item.xpath('drugrecurreadministration/text()')[0]))
+                drug.drugrecurreadministration = null_boolean_validator(str(item.xpath('drugrecurreadministration/text()')[0]))
             except:
                 pass
             try:
-                drug.drugadditional = boolean_validator(str(item.xpath('drugadditional/text()')[0]))
+                drug.drugadditional = null_boolean_validator(str(item.xpath('drugadditional/text()')[0]))
             except:
                 pass
             drug.save()
         
-    context = etree.iterparse('/Users/SeanHerron/Downloads/faers_xml_2012q4/xml/short_xml.xml', tag="safetyreport")
+    context = etree.iterparse(xmlfile, tag="safetyreport")
     fast_iter(context,process_element)
