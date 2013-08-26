@@ -23,7 +23,7 @@ def datetime_validator(format_code, date):
         return datetime.datetime.strptime(date, '%Y%m')
     elif format_code == "602":
         return datetime.datetime.strptime(date, '%Y')
-
+        
 @task()
 def loader():
     def fast_iter(context, func):
@@ -155,12 +155,12 @@ def loader():
             pass
         report.save()
         
-        duplicate = ReportDuplicate()
         reportduplicates = elem.xpath('reportduplicate')
         for item in reportduplicates:
+            duplicate = ReportDuplicate()
             duplicate.report = Report.objects.get(safetyreportid=report.safetyreportid)
             try:
-                duplicate.duplicatesource = str(elem.xpath('duplicatesource/text()')[0])
+                duplicate.duplicatesource = str(item.xpath('duplicatesource/text()')[0])
             except:
                 pass
             try:
@@ -169,9 +169,9 @@ def loader():
                 pass
             duplicate.save()
         
-        reaction = Reaction()
         reactions = elem.xpath('patient/reaction')
         for item in reactions:
+            reaction = Reaction()
             reaction.report = Report.objects.get(safetyreportid=report.safetyreportid)
             try:
                 reaction.reactionmeddrapt = str(item.xpath('reactionmeddrapt/text()')[0])
@@ -186,102 +186,102 @@ def loader():
             except:
                 pass
             reaction.save()
-        
-        drug = Drug()    
+          
         drugs= elem.xpath('patient/drug')
         for item in drugs:
-                drug.report = Report.objects.get(safetyreportid=report.safetyreportid)
-                try:
-                    drug.drugcharacterization = int(item.xpath('drugcharacterization/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.medicinalproduct = str(item.xpath('medicinalproduct/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.drugbatchnumb = str(item.xpath('drugbatchnumb/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.drugauthorizationnumb = str(item.xpath('drugauthorizationnumb/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.drugstructuredosagenumb = str(item.xpath('drugstructuredosagenumb/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.drugstructureddosageunit = int(item.xpath('drugstructureddosageunit/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.drugseparatedosagenumb = float(item.xpath('drugseparatedosagenumb/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.drugintervaldosageunitnumb = float(item.xpath('drugintervaldosageunitnumb/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.drugintervaldosagedefinition = int(item.xpath('drugintervaldosagedefinition/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.drugcumulativedosagenumb = float(item.xpath('drugcumulativedosagenumb/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.drugcumulativedosageunit = int(item.xpath('drugcumulativedosageunit/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.drugdosagetext = str(item.xpath('drugdosagetext/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.drugdosageform = str(item.xpath('drugdosageform/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.drugadministrationroute = int(item.xpath('drugadministrationroute/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.drugindication = str(item.xpath('drugindication/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.drugstartdateformat = str(elem.xpath('drugstartdateformat/text()')[0])
-                    drug.drugstartdate = datetime_validator(str(elem.xpath('drugstartdateformat/text()')[0]), str(elem.xpath('drugstartdate/text()')[0]))
-                except:
-                    pass
-                try:
-                    drug.drugenddateformat = str(elem.xpath('drugenddateformat/text()')[0])
-                    drug.drugenddate = datetime_validator(str(elem.xpath('drugenddateformat/text()')[0]), str(elem.xpath('drugenddate/text()')[0]))
-                except:
-                    pass
-                try:
-                    drug.drugtreatmentduration = float(item.xpath('drugtreatmentduration/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.drugtreatmentdurationunit = int(item.xpath('drugtreatmentdurationunit/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.actiondrug = int(item.xpath('actiondrug/text()')[0])
-                except:
-                    pass
-                try:
-                    drug.drugrecurreadministration = boolean_validator(str(item.xpath('drugrecurreadministration/text()')[0]))
-                except:
-                    pass
-                try:
-                    drug.drugadditional = boolean_validator(str(item.xpath('drugadditional/text()')[0]))
-                except:
-                    pass
-                drug.save()
+            drug = Drug()  
+            drug.report = Report.objects.get(safetyreportid=report.safetyreportid)
+            try:
+                drug.drugcharacterization = int(item.xpath('drugcharacterization/text()')[0])
+            except:
+                pass
+            try:
+                drug.medicinalproduct = str(item.xpath('medicinalproduct/text()')[0])
+            except:
+                pass
+            try:
+                drug.drugbatchnumb = str(item.xpath('drugbatchnumb/text()')[0])
+            except:
+                pass
+            try:
+                drug.drugauthorizationnumb = str(item.xpath('drugauthorizationnumb/text()')[0])
+            except:
+                pass
+            try:
+                drug.drugstructuredosagenumb = str(item.xpath('drugstructuredosagenumb/text()')[0])
+            except:
+                pass
+            try:
+                drug.drugstructureddosageunit = int(item.xpath('drugstructureddosageunit/text()')[0])
+            except:
+                pass
+            try:
+                drug.drugseparatedosagenumb = float(item.xpath('drugseparatedosagenumb/text()')[0])
+            except:
+                pass
+            try:
+                drug.drugintervaldosageunitnumb = float(item.xpath('drugintervaldosageunitnumb/text()')[0])
+            except:
+                pass
+            try:
+                drug.drugintervaldosagedefinition = int(item.xpath('drugintervaldosagedefinition/text()')[0])
+            except:
+                pass
+            try:
+                drug.drugcumulativedosagenumb = float(item.xpath('drugcumulativedosagenumb/text()')[0])
+            except:
+                pass
+            try:
+                drug.drugcumulativedosageunit = int(item.xpath('drugcumulativedosageunit/text()')[0])
+            except:
+                pass
+            try:
+                drug.drugdosagetext = str(item.xpath('drugdosagetext/text()')[0])
+            except:
+                pass
+            try:
+                drug.drugdosageform = str(item.xpath('drugdosageform/text()')[0])
+            except:
+                pass
+            try:
+                drug.drugadministrationroute = int(item.xpath('drugadministrationroute/text()')[0])
+            except:
+                pass
+            try:
+                drug.drugindication = str(item.xpath('drugindication/text()')[0])
+            except:
+                pass
+            try:
+                drug.drugstartdateformat = str(item.xpath('drugstartdateformat/text()')[0])
+                drug.drugstartdate = datetime_validator(str(item.xpath('drugstartdateformat/text()')[0]), str(item.xpath('drugstartdate/text()')[0]))
+            except:
+                pass
+            try:
+                drug.drugenddateformat = str(item.xpath('drugenddateformat/text()')[0])
+                drug.drugenddate = datetime_validator(str(item.xpath('drugenddateformat/text()')[0]), str(item.xpath('drugenddate/text()')[0]))
+            except:
+                pass
+            try:
+                drug.drugtreatmentduration = float(item.xpath('drugtreatmentduration/text()')[0])
+            except:
+                pass
+            try:
+                drug.drugtreatmentdurationunit = int(item.xpath('drugtreatmentdurationunit/text()')[0])
+            except:
+                pass
+            try:
+                drug.actiondrug = int(item.xpath('actiondrug/text()')[0])
+            except:
+                pass
+            try:
+                drug.drugrecurreadministration = boolean_validator(str(item.xpath('drugrecurreadministration/text()')[0]))
+            except:
+                pass
+            try:
+                drug.drugadditional = boolean_validator(str(item.xpath('drugadditional/text()')[0]))
+            except:
+                pass
+            drug.save()
         
-    context = etree.iterparse('/Volumes/Storage/Sean/Code/fda-aers/importer/xml/aug01Uxmlprod.xml', tag="safetyreport")
+    context = etree.iterparse('/Users/SeanHerron/Downloads/faers_xml_2012q4/xml/short_xml.xml', tag="safetyreport")
     fast_iter(context,process_element)
