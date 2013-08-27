@@ -122,7 +122,7 @@ interval_choices = Choices(
     (813, 'total', _('Total')),
     )
 class Report(models.Model):
-    safetyreportid = models.IntegerField("Safey Report Unique Identifier", max_length=125, primary_key=True)
+    safetyreportid = models.SlugField("Safey Report Unique Identifier", max_length=125, primary_key=True)
     safetyreportversion = models.IntegerField("Safety Report Version Number", max_length=125, blank=True, null=True)
     primarysourcecountry = models.CharField("Country of the primary reporter", max_length=3, blank=True)
     occurcountry = models.CharField("Country where the event occured", max_length=3, blank=True)
@@ -170,6 +170,9 @@ class Report(models.Model):
     patientsex_choices = Choices((0, 'unknown', _('Unknown')), (1, 'male', _('Male')), (2, 'female', _('Female')), (9, 'unspecified', _('Unspecified')))
     patientsex = models.IntegerField("Gender of patient", choices=patientsex_choices, blank=True, null=True)
 
+    def __unicode__(self):
+        return u'%s' % (self.safetyreportid)
+            
 class ReportDuplicate(models.Model):
     report = models.ForeignKey(Report)
     duplicatesource = models.CharField(max_length=250, blank=True,)

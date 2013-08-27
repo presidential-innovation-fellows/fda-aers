@@ -1,0 +1,1122 @@
+<ichicsr lang="en">
+ <ichicsrmessageheader>
+  <messagetype>ICSR</messagetype>
+  <messageformatversion>2.1</messageformatversion>
+  <messageformatrelease>1.0</messageformatrelease>
+  <messagenumb>2012-07</messagenumb>
+  <messagesenderidentifier>FDA CDER ODS</messagesenderidentifier>
+  <messagereceiveridentifier>Public Use</messagereceiveridentifier>
+  <messagedateformat>204</messagedateformat>
+  <messagedate>2012092808:23:10</messagedate>
+ </ichicsrmessageheader>
+  <safetyreport>
+   <safetyreportid>8480347-2</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnessother>1</seriousnessother>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120701</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120626</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>GB-TEVA-345109ISR</companynumb>
+  <primarysource>
+     <reportercountry>UNITED KINGDOM</reportercountry>
+     <qualification>1</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientonsetage>70</patientonsetage>
+     <patientonsetageunit>801</patientonsetageunit>
+     <patientweight>86</patientweight>
+     <patientsex>2</patientsex>
+  <reaction>
+     <reactionmeddrapt>ANAEMIA HAEMOLYTIC AUTOIMMUNE</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>ALLOPURINOL</medicinalproduct>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20120305</drugstartdate>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>FUROSEMIDE</medicinalproduct>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20120305</drugstartdate>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>RAMIPRIL</medicinalproduct>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20120305</drugstartdate>
+  </drug>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>SIMVASTATIN</medicinalproduct>
+     <drugauthorizationnumb>076052</drugauthorizationnumb>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20120305</drugstartdate>
+     <drugenddateformat>102</drugenddateformat>
+     <drugenddate>20120430</drugenddate>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>ATENOLOL</medicinalproduct>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20120305</drugstartdate>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>LACIDIPINE</medicinalproduct>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20120305</drugstartdate>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>LEVOTHYROXINE</medicinalproduct>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20120224</drugstartdate>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480348-4</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnesshospitalization>1</seriousnesshospitalization>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120701</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120620</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>FR-TEVA-345203ISR</companynumb>
+  <primarysource>
+     <reportercountry>FRANCE</reportercountry>
+     <qualification>1</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientsex>2</patientsex>
+  <reaction>
+     <reactionmeddrapt>OPTIC NEUROPATHY</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>LEVONORGESTREL</medicinalproduct>
+     <drugauthorizationnumb>018782</drugauthorizationnumb>
+     <drugadministrationroute>048</drugadministrationroute>
+     <drugindication>CONTRACEPTION</drugindication>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20120401</drugstartdate>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480349-6</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>2</serious>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120701</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120621</receiptdate>
+   <fulfillexpeditecriteria>2</fulfillexpeditecriteria>
+   <companynumb>US-TEVA-344556USA</companynumb>
+  <primarysource>
+     <reportercountry>UNITED STATES</reportercountry>
+     <qualification>5</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientsex>2</patientsex>
+  <reaction>
+     <reactionmeddrapt>DYSPNOEA</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>PROAIR HFA</medicinalproduct>
+     <drugauthorizationnumb>021457</drugauthorizationnumb>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480350-2</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnesshospitalization>1</seriousnesshospitalization>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120701</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120521</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>ES-ELI_LILLY_AND_COMPANY-ES201206008580</companynumb>
+  <primarysource>
+     <reportercountry>SPAIN</reportercountry>
+     <qualification>5</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientonsetage>25</patientonsetage>
+     <patientonsetageunit>801</patientonsetageunit>
+     <patientsex>2</patientsex>
+  <reaction>
+     <reactionmeddrapt>FATIGUE</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>WEIGHT INCREASED</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>SOMNOLENCE</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>INJECTION SITE PAIN</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>HOSPITALISATION</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>DEPRESSED MOOD</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>LORAZEPAM</medicinalproduct>
+     <drugdosagetext>UNK</drugdosagetext>
+  </drug>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>OLANZAPINE</medicinalproduct>
+  </drug>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>ZYPREXA</medicinalproduct>
+     <drugauthorizationnumb>020592</drugauthorizationnumb>
+     <drugdosagetext>UNK</drugdosagetext>
+     <drugadministrationroute>048</drugadministrationroute>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>RISPERDAL CONSTA</medicinalproduct>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>DEPAKENE</medicinalproduct>
+     <drugdosagetext>UNK</drugdosagetext>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20090101</drugstartdate>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>ABILIFY</medicinalproduct>
+     <drugdosagetext>UNK</drugdosagetext>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20090101</drugstartdate>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480351-4</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnesshospitalization>1</seriousnesshospitalization>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120701</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120523</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>ES-ELI_LILLY_AND_COMPANY-ES201206008603</companynumb>
+  <primarysource>
+     <reportercountry>SPAIN</reportercountry>
+     <qualification>5</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientsex>2</patientsex>
+  <reaction>
+     <reactionmeddrapt>SCHIZOPHRENIA</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>OLANZAPINE</medicinalproduct>
+     <drugauthorizationnumb>022173</drugauthorizationnumb>
+     <drugdosagetext>UNK, 2/M</drugdosagetext>
+     <drugadministrationroute>030</drugadministrationroute>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480352-6</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnesshospitalization>1</seriousnesshospitalization>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120701</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120529</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>ES-ELI_LILLY_AND_COMPANY-ES201206008610</companynumb>
+  <primarysource>
+     <reportercountry>SPAIN</reportercountry>
+     <qualification>5</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientsex>1</patientsex>
+  <reaction>
+     <reactionmeddrapt>ABDOMINAL PAIN UPPER</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>HOSPITALISATION</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>OFF LABEL USE</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>WEIGHT INCREASED</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>OLANZAPINE</medicinalproduct>
+     <drugdosagetext>450 MG PER MONTH</drugdosagetext>
+  </drug>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>OLANZAPINE</medicinalproduct>
+     <drugauthorizationnumb>020592</drugauthorizationnumb>
+     <drugadministrationroute>048</drugadministrationroute>
+  </drug>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>OLANZAPINE</medicinalproduct>
+     <drugdosagetext>450 MG Q 15 DAYS</drugdosagetext>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480353-8</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnesshospitalization>1</seriousnesshospitalization>
+   <seriousnessother>1</seriousnessother>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120701</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120529</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>ES-ELI_LILLY_AND_COMPANY-ES201206007192</companynumb>
+  <primarysource>
+     <reportercountry>SPAIN</reportercountry>
+     <qualification>5</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientonsetage>28</patientonsetage>
+     <patientonsetageunit>801</patientonsetageunit>
+     <patientsex>1</patientsex>
+  <reaction>
+     <reactionmeddrapt>DEPRESSED MOOD</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>SUICIDAL IDEATION</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>HOSPITALISATION</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>FEELING ABNORMAL</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>AGGRESSION</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>ZYPREXA</medicinalproduct>
+     <drugauthorizationnumb>020592</drugauthorizationnumb>
+     <drugdosagetext>UNK, UNKNOWN</drugdosagetext>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>CLONAZEPAM</medicinalproduct>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>LORAZEPAM</medicinalproduct>
+  </drug>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>OLANZAPINE</medicinalproduct>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>CITALOPRAM HYDROBROMIDE</medicinalproduct>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480354-X</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnesshospitalization>1</seriousnesshospitalization>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120701</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120619</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>HU-ELI_LILLY_AND_COMPANY-HU201206001854</companynumb>
+  <primarysource>
+     <reportercountry>HUNGARY</reportercountry>
+     <qualification>5</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientonsetage>26</patientonsetage>
+     <patientonsetageunit>801</patientonsetageunit>
+     <patientsex>1</patientsex>
+  <reaction>
+     <reactionmeddrapt>DRUG ABUSE</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>SOMNOLENCE</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>AGITATION</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>MYALGIA</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>OLANZAPINE</medicinalproduct>
+     <drugauthorizationnumb>022173</drugauthorizationnumb>
+     <drugdosagetext>300 MG, MONTHLY (1/M)</drugdosagetext>
+     <drugadministrationroute>030</drugadministrationroute>
+     <drugindication>SCHIZOPHRENIA</drugindication>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20120301</drugstartdate>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>OLANZAPINE</medicinalproduct>
+     <drugdosagetext>10 MG, EACH EVENING</drugdosagetext>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20120531</drugstartdate>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480355-1</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnessother>1</seriousnessother>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120701</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120619</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>US-ELI_LILLY_AND_COMPANY-US201206007788</companynumb>
+  <primarysource>
+     <reportercountry>UNITED STATES</reportercountry>
+     <qualification>1</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientonsetage>35</patientonsetage>
+     <patientonsetageunit>801</patientonsetageunit>
+     <patientsex>1</patientsex>
+  <reaction>
+     <reactionmeddrapt>LOSS OF CONSCIOUSNESS</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>FACIAL BONES FRACTURE</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>DISORIENTATION</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>AGGRESSION</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>CYMBALTA</medicinalproduct>
+     <drugauthorizationnumb>021427</drugauthorizationnumb>
+     <drugdosagetext>30 MG, SINGLE</drugdosagetext>
+     <drugindication>ANXIETY</drugindication>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480356-3</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnessother>1</seriousnessother>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120701</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120619</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>DE-ELI_LILLY_AND_COMPANY-DE201206006349</companynumb>
+  <primarysource>
+     <reportercountry>GERMANY</reportercountry>
+     <qualification>1</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientonsetage>45</patientonsetage>
+     <patientonsetageunit>801</patientonsetageunit>
+     <patientsex>1</patientsex>
+  <reaction>
+     <reactionmeddrapt>TREMOR</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>HYPOTENSION</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>SOMNOLENCE</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>GAIT DISTURBANCE</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>FEELING ABNORMAL</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>OLANZAPINE</medicinalproduct>
+     <drugauthorizationnumb>022173</drugauthorizationnumb>
+     <drugdosagetext>UNK, UNKNOWN</drugdosagetext>
+     <drugadministrationroute>030</drugadministrationroute>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480357-5</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnessother>1</seriousnessother>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120701</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120619</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>DE-ELI_LILLY_AND_COMPANY-DE201206005930</companynumb>
+  <primarysource>
+     <reportercountry>GERMANY</reportercountry>
+     <qualification>5</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientonsetage>30</patientonsetage>
+     <patientonsetageunit>801</patientonsetageunit>
+     <patientsex>1</patientsex>
+  <reaction>
+     <reactionmeddrapt>DRUG LEVEL INCREASED</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>HYPOTENSION</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>SEDATION</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>OLANZAPINE</medicinalproduct>
+     <drugauthorizationnumb>022173</drugauthorizationnumb>
+     <drugdosagetext>300 MG, 2/M</drugdosagetext>
+     <drugadministrationroute>030</drugadministrationroute>
+     <drugindication>SCHIZOPHRENIA</drugindication>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20120220</drugstartdate>
+     <drugenddateformat>102</drugenddateformat>
+     <drugenddate>20120608</drugenddate>
+     <drugtreatmentduration>110</drugtreatmentduration>
+     <drugtreatmentdurationunit>804</drugtreatmentdurationunit>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480358-7</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnessother>1</seriousnessother>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120701</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120625</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>GR-AMGEN-GRCSP2012031503</companynumb>
+  <primarysource>
+     <reportercountry>GREECE</reportercountry>
+     <qualification>1</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientonsetage>62</patientonsetage>
+     <patientonsetageunit>801</patientonsetageunit>
+     <patientweight>90</patientweight>
+     <patientsex>2</patientsex>
+  <reaction>
+     <reactionmeddrapt>GINGIVAL INFECTION</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>TOOTH EXTRACTION</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>INFLAMMATION</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>OSTEONECROSIS OF JAW</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>PROLIA</medicinalproduct>
+     <drugdosagetext>60 MG, Q6MO</drugdosagetext>
+     <drugadministrationroute>058</drugadministrationroute>
+     <drugindication>OSTEOPOROSIS</drugindication>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20111006</drugstartdate>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>VITAMIN D</medicinalproduct>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>LEVOTHYROXINE SODIUM</medicinalproduct>
+     <drugdosagetext>1 UNK, UNK</drugdosagetext>
+     <drugadministrationroute>048</drugadministrationroute>
+     <drugindication>HYPOTHYROIDISM</drugindication>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>CRESTOR</medicinalproduct>
+     <drugdosagetext>UNK UNK, QD</drugdosagetext>
+     <drugadministrationroute>048</drugadministrationroute>
+     <drugindication>HYPERCHOLESTEROLAEMIA</drugindication>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>ANTIPSYCHOTICS</medicinalproduct>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480359-9</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnesshospitalization>1</seriousnesshospitalization>
+   <seriousnessother>1</seriousnessother>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120701</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120626</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>US-AMGEN-USASP2012031974</companynumb>
+  <primarysource>
+     <reportercountry>UNITED STATES</reportercountry>
+     <qualification>3</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientonsetage>63</patientonsetage>
+     <patientonsetageunit>801</patientonsetageunit>
+     <patientweight>64.399</patientweight>
+     <patientsex>2</patientsex>
+  <reaction>
+     <reactionmeddrapt>FOOD POISONING</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>ABDOMINAL PAIN UPPER</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>LOW DENSITY LIPOPROTEIN INCREASED</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>PROLIA</medicinalproduct>
+     <drugbatchnumb>1021120</drugbatchnumb>
+     <drugdosagetext>1 ML, ONE TIME DOSE</drugdosagetext>
+     <drugindication>OSTEOPOROSIS POSTMENOPAUSAL</drugindication>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20110501</drugstartdate>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480360-5</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnessother>1</seriousnessother>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120701</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120626</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>US-AMGEN-USASP2012035358</companynumb>
+  <primarysource>
+     <reportercountry>UNITED STATES</reportercountry>
+     <qualification>5</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientonsetage>85</patientonsetage>
+     <patientonsetageunit>801</patientonsetageunit>
+     <patientweight>89</patientweight>
+     <patientsex>2</patientsex>
+  <reaction>
+     <reactionmeddrapt>SPINAL COMPRESSION FRACTURE</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>PROLIA</medicinalproduct>
+     <drugdosagetext>60 MG, Q6MO</drugdosagetext>
+     <drugadministrationroute>058</drugadministrationroute>
+     <drugindication>OSTEOPOROSIS POSTMENOPAUSAL</drugindication>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20111114</drugstartdate>
+     <drugenddateformat>102</drugenddateformat>
+     <drugenddate>20120515</drugenddate>
+     <drugtreatmentduration>184</drugtreatmentduration>
+     <drugtreatmentdurationunit>804</drugtreatmentdurationunit>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480361-7</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnesshospitalization>1</seriousnesshospitalization>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120701</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120627</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>US-AMGEN-USASP2012039917</companynumb>
+  <primarysource>
+     <reportercountry>UNITED STATES</reportercountry>
+     <qualification>1</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientonsetage>89</patientonsetage>
+     <patientonsetageunit>801</patientonsetageunit>
+     <patientsex>2</patientsex>
+  <reaction>
+     <reactionmeddrapt>VITAMIN D DECREASED</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>HYPOCALCAEMIA</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>PROLIA</medicinalproduct>
+     <drugindication>OSTEOPOROSIS POSTMENOPAUSAL</drugindication>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20120524</drugstartdate>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480362-9</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnessother>1</seriousnessother>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120701</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120622</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>AU-AMGEN-AUSSP2012037116</companynumb>
+  <primarysource>
+     <reportercountry>NEW ZEALAND</reportercountry>
+     <qualification>5</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientonsetage>69</patientonsetage>
+     <patientonsetageunit>801</patientonsetageunit>
+     <patientsex>1</patientsex>
+  <reaction>
+     <reactionmeddrapt>OSTEONECROSIS OF JAW</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>XGEVA</medicinalproduct>
+     <drugindication>PRODUCT USED FOR UNKNOWN INDICATION</drugindication>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480363-0</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnesshospitalization>1</seriousnesshospitalization>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120702</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120616</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>CN-ACCORD-013752</companynumb>
+  <primarysource>
+     <reportercountry>CHINA</reportercountry>
+     <qualification>3</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientonsetage>13</patientonsetage>
+     <patientonsetageunit>801</patientonsetageunit>
+     <patientsex>2</patientsex>
+  <reaction>
+     <reactionmeddrapt>HALLUCINATION</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>RENAL TUBULAR ACIDOSIS</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>OFF LABEL USE</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>OLANZAPINE</medicinalproduct>
+  </drug>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>TRIHEXYPHENIDYL HCL</medicinalproduct>
+     <drugdosagetext>STARTED WITH UNKNOWN DOSE AND GRADUALLY INCREASED TO 5 MG/DAY</drugdosagetext>
+     <drugindication>RESTLESSNESS</drugindication>
+  </drug>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>TOPIRAMATE</medicinalproduct>
+     <drugauthorizationnumb>076311</drugauthorizationnumb>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480364-2</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>2</serious>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120702</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120626</receiptdate>
+   <fulfillexpeditecriteria>2</fulfillexpeditecriteria>
+   <companynumb>US-B.I. PHARMACEUTICALS,INC./RIDGEFIELD-2012-BP-14524BP</companynumb>
+  <primarysource>
+     <reportercountry>UNITED STATES</reportercountry>
+     <qualification>5</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientsex>2</patientsex>
+  <reaction>
+     <reactionmeddrapt>INCORRECT ROUTE OF DRUG ADMINISTRATION</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>SPIRIVA</medicinalproduct>
+     <drugbatchnumb>NOT REPORTED</drugbatchnumb>
+     <drugauthorizationnumb>021395</drugauthorizationnumb>
+     <drugadministrationroute>048</drugadministrationroute>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20120626</drugstartdate>
+     <drugenddateformat>102</drugenddateformat>
+     <drugenddate>20120626</drugenddate>
+  </drug>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>SPIRIVA</medicinalproduct>
+     <drugbatchnumb>NOT REPORTED</drugbatchnumb>
+     <drugauthorizationnumb>021395</drugauthorizationnumb>
+     <drugdosagetext>18 MCG</drugdosagetext>
+     <drugadministrationroute>055</drugadministrationroute>
+     <drugindication>PNEUMONIA</drugindication>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20120601</drugstartdate>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480365-4</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnesshospitalization>1</seriousnesshospitalization>
+   <seriousnessother>1</seriousnessother>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120702</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120627</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>SE-AMGEN-SWESP2012033107</companynumb>
+  <primarysource>
+     <reportercountry>SWEDEN</reportercountry>
+     <qualification>1</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientonsetage>71</patientonsetage>
+     <patientonsetageunit>801</patientonsetageunit>
+     <patientsex>2</patientsex>
+  <reaction>
+     <reactionmeddrapt>CEREBRAL INFARCTION</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>NEULASTA</medicinalproduct>
+     <drugdosagetext>6 MG, ONE TIME DOSE</drugdosagetext>
+     <drugadministrationroute>058</drugadministrationroute>
+     <drugindication>HODGKIN'S DISEASE</drugindication>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20120507</drugstartdate>
+     <drugenddateformat>102</drugenddateformat>
+     <drugenddate>20120507</drugenddate>
+     <drugtreatmentduration>1</drugtreatmentduration>
+     <drugtreatmentdurationunit>804</drugtreatmentdurationunit>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>CYCLOPHOSPHAMIDE</medicinalproduct>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>VINCRISTINE</medicinalproduct>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>DOXORUBICIN HCL</medicinalproduct>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480366-6</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnesshospitalization>1</seriousnesshospitalization>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120702</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120627</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>US-AMGEN-USASP2012039973</companynumb>
+  <primarysource>
+     <reportercountry>UNITED STATES</reportercountry>
+     <qualification>5</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientsex>2</patientsex>
+  <reaction>
+     <reactionmeddrapt>DYSPNOEA</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>HEART VALVE REPLACEMENT</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>CYSTITIS</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>EAR PAIN</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>DECREASED APPETITE</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>HYPERSENSITIVITY</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>HEADACHE</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>NASAL CONGESTION</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>THROAT IRRITATION</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>ASTHENIA</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>WEIGHT DECREASED</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>PROLIA</medicinalproduct>
+     <drugdosagetext>UNK UNK, Q6MO</drugdosagetext>
+     <drugindication>OSTEOPOROSIS POSTMENOPAUSAL</drugindication>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20111120</drugstartdate>
+  </drug>
+  </patient>
+  </safetyreport>
+  <safetyreport>
+   <safetyreportid>8480367-8</safetyreportid>
+   <transmissiondateformat>102</transmissiondateformat>
+   <transmissiondate>20120928</transmissiondate>
+   <serious>1</serious>
+   <seriousnessother>1</seriousnessother>
+   <receivedateformat>102</receivedateformat>
+   <receivedate>20120702</receivedate>
+   <receiptdateformat>102</receiptdateformat>
+   <receiptdate>20120626</receiptdate>
+   <fulfillexpeditecriteria>1</fulfillexpeditecriteria>
+   <companynumb>US-AMGEN-USASP2011030896</companynumb>
+  <primarysource>
+     <reportercountry>UNITED STATES</reportercountry>
+     <qualification>2</qualification>
+  </primarysource>
+  <sender>
+    <senderorganization>FDA-Public Use</senderorganization>
+  </sender>
+  <receiver>
+  </receiver>
+  <patient>
+     <patientonsetage>59</patientonsetage>
+     <patientonsetageunit>801</patientonsetageunit>
+     <patientweight>93.878</patientweight>
+     <patientsex>2</patientsex>
+  <reaction>
+     <reactionmeddrapt>IRON DEFICIENCY ANAEMIA</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>CANDIDIASIS</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>OEDEMA MOUTH</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>HAEMORRHAGE</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>SWOLLEN TONGUE</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>DIABETES MELLITUS</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>THERAPEUTIC RESPONSE DECREASED</reactionmeddrapt>
+  </reaction>
+  <reaction>
+     <reactionmeddrapt>DIABETIC NEUROPATHY</reactionmeddrapt>
+  </reaction>
+  <drug>
+     <drugcharacterization>1</drugcharacterization>
+     <medicinalproduct>NPLATE</medicinalproduct>
+     <drugdosagetext>8.5 MUG/KG, QWK</drugdosagetext>
+     <drugadministrationroute>058</drugadministrationroute>
+     <drugindication>IDIOPATHIC THROMBOCYTOPENIC PURPURA</drugindication>
+     <drugstartdateformat>102</drugstartdateformat>
+     <drugstartdate>20101231</drugstartdate>
+     <drugenddateformat>102</drugenddateformat>
+     <drugenddate>20110419</drugenddate>
+     <drugtreatmentduration>110</drugtreatmentduration>
+     <drugtreatmentdurationunit>804</drugtreatmentdurationunit>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>ELTROMBOPAG</medicinalproduct>
+  </drug>
+  <drug>
+     <drugcharacterization>2</drugcharacterization>
+     <medicinalproduct>CORTICOSTEROIDS</medicinalproduct>
+  </drug>
+  </patient>
+  </safetyreport>
+ </ichicsr>

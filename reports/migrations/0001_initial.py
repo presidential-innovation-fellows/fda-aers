@@ -10,7 +10,7 @@ class Migration(SchemaMigration):
     def forwards(self, orm):
         # Adding model 'Report'
         db.create_table(u'reports_report', (
-            ('safetyreportid', self.gf('django.db.models.fields.IntegerField')(max_length=125, primary_key=True)),
+            ('safetyreportid', self.gf('django.db.models.fields.SlugField')(max_length=125, primary_key=True)),
             ('safetyreportversion', self.gf('django.db.models.fields.IntegerField')(max_length=125, null=True, blank=True)),
             ('primarysourcecountry', self.gf('django.db.models.fields.CharField')(max_length=3, blank=True)),
             ('occurcountry', self.gf('django.db.models.fields.CharField')(max_length=3, blank=True)),
@@ -167,7 +167,7 @@ class Migration(SchemaMigration):
             'recieptdateformat': ('django.db.models.fields.CharField', [], {'max_length': '25', 'blank': 'True'}),
             'reportercountry': ('django.db.models.fields.CharField', [], {'max_length': '3', 'blank': 'True'}),
             'reporttype': ('django.db.models.fields.IntegerField', [], {'null': 'True', 'blank': 'True'}),
-            'safetyreportid': ('django.db.models.fields.IntegerField', [], {'max_length': '125', 'primary_key': 'True'}),
+            'safetyreportid': ('django.db.models.fields.SlugField', [], {'max_length': '125', 'primary_key': 'True'}),
             'safetyreportversion': ('django.db.models.fields.IntegerField', [], {'max_length': '125', 'null': 'True', 'blank': 'True'}),
             'senderorganization': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
             'sendertype': ('django.db.models.fields.IntegerField', [], {'null': 'True', 'blank': 'True'}),

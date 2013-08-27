@@ -1,7 +1,7 @@
 from celery import task
 from django.db.transaction import commit_on_success
 
-
+import os.path
 import unicodecsv
 import datetime
 from lxml import etree
@@ -35,7 +35,7 @@ def int_validator(value):
     return value
         
 @task()
-def loader(xmlfile):
+def loader(filename):
     def fast_iter(context, func):
         # http://www.ibm.com/developerworks/xml/library/x-hiperfparse/
         # Author: Liza Daly
@@ -49,7 +49,7 @@ def loader(xmlfile):
     def process_element(elem):
         report = Report()
         try:
-            report.safetyreportid = int_validator(elem.xpath('safetyreportid/text()')[0])
+            report.safetyreportid = elem.xpath('safetyreportid/text()')[0]
         except:
             pass
         try:
@@ -294,5 +294,5 @@ def loader(xmlfile):
                 pass
             drug.save()
         
-    context = etree.iterparse(xmlfile, tag="safetyreport")
+    context = etree.iterparse(filename, tag="safetyreport")
     fast_iter(context,process_element)
