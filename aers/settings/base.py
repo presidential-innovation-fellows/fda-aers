@@ -201,6 +201,7 @@ THIRD_PARTY_APPS = (
     # Database migration helpers:
     'south',
     'djcelery',
+    'tastypie',
 )
 
 # Apps specific for this project go here.
