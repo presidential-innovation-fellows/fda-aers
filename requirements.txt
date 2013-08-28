@@ -13,7 +13,6 @@ django-tastypie==0.10.0
 gunicorn==17.5
 kombu==2.5.12
 lxml==3.2.3
-psycopg2==2.5.1
 python-dateutil==2.1
 python-mimeparse==0.1.4
 pytz==2013b
