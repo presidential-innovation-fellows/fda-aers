@@ -1,5 +1,5 @@
 from tastypie import fields, utils
-from tastypie.resources import Resource
+from tastypie.resources import Resource, ALL, ALL_WITH_RELATIONS
 from tastypie.resources import ModelResource
 from .models import Report, Drug, Reaction, ReportDuplicate
 
@@ -13,6 +13,10 @@ class ReportResource(ModelResource):
         resource_name = 'report'
         fields = ['safetyreportid', 'safetyreportversion', 'primarysourcecountry', 'occurcountry', 'transmissiondate', 'reporttype', 'serious', 'seriousnessdeath', 'seriousnesslifethreatening', 'seriousnesshospitalization', 'seriousnessdisabling', 'seriousnesscongenitalanomali', 'seriousnessother', 'receivedateformat', 'receivedate', 'recieptdateformat', 'recieptdate', 'fullfillexpeditecriteria', 'companynumb', 'reportercountry', 'duplicate', 'qualification', 'sendertype', 'senderorganization', 'receivertype', 'receiverorganization', 'patientonsetage', 'patientonsetageunit', 'patientweight', 'patientsex'] 
         collection_name = "safetyreports"
+        filtering = {
+            'companynumb': ALL_WITH_RELATIONS,
+            
+        }
 
 class ReportDuplicateResource(ModelResource):    
     class Meta:
