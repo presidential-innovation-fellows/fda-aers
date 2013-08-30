@@ -41,3 +41,6 @@ nosetests.xml
 db
 db*
 .elasticbeanstalk/
+.ebextensions/
+
+aers/settings/production.py

@@ -1,6 +1,6 @@
 """Production settings and globals."""
 
-
+import os
 from os import environ
 
 from base import *
@@ -51,12 +51,13 @@ SERVER_EMAIL = EMAIL_HOST_USER
 
 ########## DATABASE CONFIGURATION
 DATABASES = {
-	'default': {
-        	'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        	'NAME': '',                      
-        	'USER': '',
-        	'PASSWORD': get_env_setting('db_user_password'),
-        	'HOST': '127.0.0.1'
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.environ['RDS_DB_NAME'],
+        'USER': os.environ['RDS_USERNAME'],
+        'PASSWORD': os.environ['RDS_PASSWORD'],
+        'HOST': os.environ['RDS_HOSTNAME'],
+        'PORT': os.environ['RDS_PORT'],
     }
 }
 ########## END DATABASE CONFIGURATION
@@ -70,5 +71,5 @@ DATABASES = {
 
 ########## SECRET CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
-SECRET_KEY = get_env_setting('SECRET_KEY')
+SECRET_KEY = '@(J(HTGE)D(*FH*#T)Y$O)'
 ########## END SECRET CONFIGURATION
