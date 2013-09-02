@@ -43,4 +43,4 @@ db*
 .elasticbeanstalk/
 .ebextensions/
 
-aers/settings/production.py
+production.py
