@@ -41,6 +41,6 @@ nosetests.xml
 db
 db*
 .elasticbeanstalk/
-.ebextensions/
+.ebextensions
 
 production.py

@@ -124,8 +124,8 @@ interval_choices = Choices(
 class Report(models.Model):
     safetyreportid = models.SlugField("Safey Report Unique Identifier", max_length=125, primary_key=True)
     safetyreportversion = models.IntegerField("Safety Report Version Number", max_length=125, blank=True, null=True)
-    primarysourcecountry = models.CharField("Country of the primary reporter", max_length=3, blank=True)
-    occurcountry = models.CharField("Country where the event occured", max_length=3, blank=True)
+    primarysourcecountry = models.CharField("Country of the primary reporter", max_length=125, blank=True)
+    occurcountry = models.CharField("Country where the event occured", max_length=125, blank=True)
     transmissiondateformat = models.CharField("Date format code", max_length=25, blank=True)
     transmissiondate = models.DateField("Date recorded when data was created", blank=True, null=True)
     reporttype_choices = Choices((1, 'spontaneous', _('Spontaneous')), (2, 'report_from_study', _('Report from Study')), (3, 'other', _('Other')), (4, 'unknown', _('Not available to sender (unknown)')))
@@ -148,7 +148,7 @@ class Report(models.Model):
     ## A.1.10
     companynumb = models.CharField("FDA Identification Number", max_length=125, blank=True)
     ## A.2.1.3
-    reportercountry = models.CharField("Country of the reporter in the latest case version", max_length=3, blank=True)
+    reportercountry = models.CharField("Country of the reporter in the latest case version", max_length=125, blank=True)
     ## A.1.11
     duplicate = models.BooleanField("Other case identifiers in previous transmissions")
     ## 1.2.1
