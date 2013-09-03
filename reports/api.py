@@ -14,8 +14,8 @@ class ReportResource(ModelResource):
         fields = ['safetyreportid', 'safetyreportversion', 'primarysourcecountry', 'occurcountry', 'transmissiondate', 'reporttype', 'serious', 'seriousnessdeath', 'seriousnesslifethreatening', 'seriousnesshospitalization', 'seriousnessdisabling', 'seriousnesscongenitalanomali', 'seriousnessother', 'receivedateformat', 'receivedate', 'recieptdateformat', 'recieptdate', 'fullfillexpeditecriteria', 'companynumb', 'reportercountry', 'duplicate', 'qualification', 'sendertype', 'senderorganization', 'receivertype', 'receiverorganization', 'patientonsetage', 'patientonsetageunit', 'patientweight', 'patientsex'] 
         collection_name = "safetyreports"
         filtering = {
-            'companynumb': ALL_WITH_RELATIONS,
-            
+            'companynumb': ['exact', 'iexact', 'contains', 'icontains', 'in', 'startswith', 'istartswith', 'endswith' , 'iendswith', 'search', 'regex', 'iregex'],
+            'safetyreportid': ['exact', 'iexact', 'contains', 'icontains', 'in', 'startswith', 'istartswith', 'endswith' , 'iendswith', 'range', 'search', 'regex', 'iregex'],
         }
 
 class ReportDuplicateResource(ModelResource):    
