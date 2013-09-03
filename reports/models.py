@@ -123,6 +123,7 @@ interval_choices = Choices(
     )
 class Report(models.Model):
     safetyreportid = models.SlugField("Safey Report Unique Identifier", max_length=500, primary_key=True)
+    importedfilename = models.CharField("Imported Filename Source", max_length=50, blank=True)
     safetyreportversion = models.IntegerField("Safety Report Version Number", max_length=500, blank=True, null=True)
     primarysourcecountry = models.CharField("Country of the primary reporter", max_length=500, blank=True)
     occurcountry = models.CharField("Country where the event occured", max_length=500, blank=True)
@@ -177,6 +178,9 @@ class ReportDuplicate(models.Model):
     report = models.ForeignKey(Report)
     duplicatesource = models.CharField(max_length=500, blank=True,)
     duplicatenumb = models.CharField(max_length=500, blank=True)
+    
+    class Meta:
+        unique_together = ("report", "duplicatesource")
 
 class Reaction(models.Model):
     report = models.ForeignKey(Report)
@@ -184,6 +188,9 @@ class Reaction(models.Model):
     reactionmeddraversionpt = models.CharField("MedDRA version for reaction/event term PT", max_length=500, blank=True)
     reactionoutcome_choices = Choices((1, 'recovered', _('Recovered/Resolved')), (2, 'recovering', _('Recovering/Resolving')), (3, 'not_recovered', _('Not Recovered/Not Resolved')), (4, 'recovered_sequelae', _('Recovered/Resolved with sequelae')), (5, 'fatal', _('Fatal')), (6, 'unknown', _('Unknown')))
     reactionoutcome = models.IntegerField("Outcome of Reaction/Event", choices=reactionoutcome_choices, blank=True, null=True)
+    
+    class Meta:
+        unique_together = ("report", "reactionmeddrapt")
     
 class Drug(models.Model):
     report = models.ForeignKey(Report)
@@ -213,3 +220,6 @@ class Drug(models.Model):
     actiondrug = models.IntegerField("Actions taken with drug", choices=actiondrug_choices, blank=True, null=True)
     drugrecurreadministration = models.NullBooleanField("Did reaction recur on readministration?", blank=True)
     drugadditional= models.NullBooleanField("Dechallenge outcome information (event abated after product use stopped or dose reduced)", blank=True)
+    
+    class Meta:
+        unique_together = ("report", "medicinalproduct")

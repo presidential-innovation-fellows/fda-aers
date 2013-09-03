@@ -7,6 +7,7 @@ import datetime
 from lxml import etree
 
 from reports.models import Report, ReportDuplicate, Reaction, Drug
+from importer.models import Dataset
 
 def boolean_validator(value):
     if value == "1":
@@ -36,6 +37,7 @@ def int_validator(value):
         
 @task()
 def loader(filename):
+    
     def fast_iter(context, func):
         # http://www.ibm.com/developerworks/xml/library/x-hiperfparse/
         # Author: Liza Daly
@@ -57,6 +59,7 @@ def loader(filename):
             report.safetyreportversion = int_validator(elem.xpath('safetyreportversion/text()')[0])
         except:
             pass
+        report.importedfilename = filename
         try:
             report.primarysourcecountry = str(elem.xpath('primarysourcecountry/text()')[0])
         except:
