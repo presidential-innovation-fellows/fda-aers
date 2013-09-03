@@ -168,8 +168,11 @@ def loader(filename):
             pass
         report.save()
         
-        reportduplicates = elem.xpath('reportduplicate')
-        reportduplicates_array = []
+        
+        reportduplicates = elem.xpath('reportduplicate')        
+        # We delete any existing reportduplicates
+        ReportDuplicate.objects.get(report=safetyreportid).delete()
+        
         for item in reportduplicates:
             duplicate = ReportDuplicate()
             duplicate.report = Report.objects.get(safetyreportid=report.safetyreportid)
@@ -184,6 +187,9 @@ def loader(filename):
             duplicate.save()
                     
         reactions = elem.xpath('patient/reaction')
+        # We delete any existing reactions
+        Reaction.objects.get(report=safetyreportid).delete()
+        
         for item in reactions:
             reaction = Reaction()
             reaction.report = Report.objects.get(safetyreportid=report.safetyreportid)
@@ -202,6 +208,9 @@ def loader(filename):
             reaction.save()
           
         drugs = elem.xpath('patient/drug')
+        # We delete any existing drugs
+        Drug.objects.get(report=safetyreportid).delete()
+        
         for item in drugs:
             drug = Drug()  
             drug.report = Report.objects.get(safetyreportid=report.safetyreportid)
