@@ -48,6 +48,7 @@ def loader(filename):
 
     def process_element(elem):
         report = Report()
+        print elem.xpath('safetyreportid/text()')[0]
         try:
             report.safetyreportid = elem.xpath('safetyreportid/text()')[0]
         except:

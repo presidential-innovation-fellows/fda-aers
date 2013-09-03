@@ -122,11 +122,11 @@ interval_choices = Choices(
     (813, 'total', _('Total')),
     )
 class Report(models.Model):
-    safetyreportid = models.SlugField("Safey Report Unique Identifier", max_length=125, primary_key=True)
-    safetyreportversion = models.IntegerField("Safety Report Version Number", max_length=125, blank=True, null=True)
-    primarysourcecountry = models.CharField("Country of the primary reporter", max_length=125, blank=True)
-    occurcountry = models.CharField("Country where the event occured", max_length=125, blank=True)
-    transmissiondateformat = models.CharField("Date format code", max_length=25, blank=True)
+    safetyreportid = models.SlugField("Safey Report Unique Identifier", max_length=500)
+    safetyreportversion = models.IntegerField("Safety Report Version Number", max_length=500)
+    primarysourcecountry = models.CharField("Country of the primary reporter", max_length=500)
+    occurcountry = models.CharField("Country where the event occured", max_length=500)
+    transmissiondateformat = models.CharField("Date format code", max_length=500)
     transmissiondate = models.DateField("Date recorded when data was created", blank=True, null=True)
     reporttype_choices = Choices((1, 'spontaneous', _('Spontaneous')), (2, 'report_from_study', _('Report from Study')), (3, 'other', _('Other')), (4, 'unknown', _('Not available to sender (unknown)')))
     reporttype = models.IntegerField("Type of Report", choices=reporttype_choices, blank=True, null=True)
@@ -139,16 +139,16 @@ class Report(models.Model):
     seriousnesscongenitalanomali = models.BooleanField("Congenital anomaly/birth defect")
     seriousnessother = models.BooleanField("Other medically important condition")
     ## A.1.6
-    receivedateformat = models.CharField("Receive Date format code", max_length=25, blank=True)
+    receivedateformat = models.CharField("Receive Date format code", max_length=500)
     receivedate = models.DateField("Initial FDA Received Date", blank=True, null=True)
-    recieptdateformat = models.CharField("Reciept Date format code", max_length=25, blank=True)
+    recieptdateformat = models.CharField("Reciept Date format code", max_length=500)
     recieptdate = models.DateField("Date of most recent report received by FDA", blank=True, null=True)
     ## A.1.9
     fullfillexpeditecriteria = models.BooleanField("Identified Expedited Report (15-day)")
     ## A.1.10
-    companynumb = models.CharField("FDA Identification Number", max_length=125, blank=True)
+    companynumb = models.CharField("FDA Identification Number", max_length=500)
     ## A.2.1.3
-    reportercountry = models.CharField("Country of the reporter in the latest case version", max_length=125, blank=True)
+    reportercountry = models.CharField("Country of the reporter in the latest case version", max_length=500)
     ## A.1.11
     duplicate = models.BooleanField("Other case identifiers in previous transmissions")
     ## 1.2.1
@@ -157,16 +157,16 @@ class Report(models.Model):
     ## A.3.1
     sendertype_choices = Choices((2, 'regulatory_authority', _('Regulatory Authority')))
     sendertype = models.IntegerField("Sender Type", choices=sendertype_choices, blank=True, null=True)
-    senderorganization = models.CharField("Organization of Sender", max_length=250, blank=True)
+    senderorganization = models.CharField("Organization of Sender", max_length=500)
     ## A.3.2
     receivertype_choices = Choices((6, 'other', _('Other')))
     receivertype = models.IntegerField("Receiver Type", choices=receivertype_choices, blank=True, null=True)
-    receiverorganization = models.CharField("Organization of Receiver", max_length=250, blank=True)
+    receiverorganization = models.CharField("Organization of Receiver", max_length=500)
     ## B.1
-    patientonsetage = models.FloatField("Patient age at onset of adverse event", max_length=250, blank=True, null=True)
+    patientonsetage = models.FloatField("Patient age at onset of adverse event", max_length=500)
     patientonsetageunit_choices = Choices((800, 'decade', _('Decade')), (801, 'year', _('Year')), (802, 'month', _('Month')), (803, 'week', _('Week')), (804, 'day', _('Day')), (805, 'hour', _('Hour')))
     patientonsetageunit = models.IntegerField("Unit for patient age value", choices=patientonsetageunit_choices, blank=True, null=True)
-    patientweight = models.FloatField("Patient weight in kilograms", max_length=7, blank=True, null=True)
+    patientweight = models.FloatField("Patient weight in kilograms", max_length=500)
     patientsex_choices = Choices((0, 'unknown', _('Unknown')), (1, 'male', _('Male')), (2, 'female', _('Female')), (9, 'unspecified', _('Unspecified')))
     patientsex = models.IntegerField("Gender of patient", choices=patientsex_choices, blank=True, null=True)
 
@@ -175,13 +175,13 @@ class Report(models.Model):
             
 class ReportDuplicate(models.Model):
     report = models.ForeignKey(Report)
-    duplicatesource = models.CharField(max_length=250, blank=True,)
-    duplicatenumb = models.CharField(max_length=250, blank=True)
+    duplicatesource = models.CharField(max_length=500)
+    duplicatenumb = models.CharField(max_length=500)
 
 class Reaction(models.Model):
     report = models.ForeignKey(Report)
-    reactionmeddrapt = models.CharField("MedDRA Preferred Term used to characterize the event", max_length=250, blank=True)
-    reactionmeddraversionpt = models.CharField("MedDRA version for reaction/event term PT", max_length=250, blank=True)
+    reactionmeddrapt = models.CharField("MedDRA Preferred Term used to characterize the event", max_length=500)
+    reactionmeddraversionpt = models.CharField("MedDRA version for reaction/event term PT", max_length=500)
     reactionoutcome_choices = Choices((1, 'recovered', _('Recovered/Resolved')), (2, 'recovering', _('Recovering/Resolving')), (3, 'not_recovered', _('Not Recovered/Not Resolved')), (4, 'recovered_sequelae', _('Recovered/Resolved with sequelae')), (5, 'fatal', _('Fatal')), (6, 'unknown', _('Unknown')))
     reactionoutcome = models.IntegerField("Outcome of Reaction/Event", choices=reactionoutcome_choices, blank=True, null=True)
     
@@ -189,23 +189,23 @@ class Drug(models.Model):
     report = models.ForeignKey(Report)
     drugcharacterization_choices = Choices((1, 'suspect', _('Suspect')), (2, 'concomitant', _('Concomitant')), (3, 'interacting', _('Interacting')))
     drugcharacterization = models.IntegerField("Reported role of drug in adverse event", choices=drugcharacterization_choices, blank=True, null=True)
-    medicinalproduct= models.CharField("Valid Trade Name if populated; otherwise, verbatim name used by reporter", max_length=250, blank=True)
-    drugbatchnumb = models.CharField("Lot Number", max_length=250, blank=True)
-    drugauthorizationnumb = models.CharField("NDA Number", max_length=250, blank=True)
-    drugstructuredosagenumb = models.CharField("Dose", max_length=250, blank=True)
+    medicinalproduct= models.CharField("Valid Trade Name if populated; otherwise, verbatim name used by reporter", max_length=500)
+    drugbatchnumb = models.CharField("Lot Number", max_length=500)
+    drugauthorizationnumb = models.CharField("NDA Number", max_length=500)
+    drugstructuredosagenumb = models.CharField("Dose", max_length=500)
     drugstructureddosageunit = models.IntegerField("Dose unit", choices=dosageunit_choices, blank=True, null=True)
-    drugseparatfledosagenumb = models.FloatField("Number of separate dosages", max_length=250, blank=True, null=True)
-    drugintervaldosageunitnumb = models.FloatField("Number of units in the interval", max_length=250, blank=True, null=True)
+    drugseparatfledosagenumb = models.FloatField("Number of separate dosages", max_length=500)
+    drugintervaldosageunitnumb = models.FloatField("Number of units in the interval", max_length=500)
     drugintervaldosagedefinition = models.IntegerField("Definition of the interval", choices=interval_choices, blank=True, null=True)
-    drugcumulativedosagenumb = models.FloatField("Cumulative dose to the first reaction", max_length=250, blank=True, null=True)
+    drugcumulativedosagenumb = models.FloatField("Cumulative dose to the first reaction", max_length=500)
     drugcumulativedosageunit = models.IntegerField("Cumulative dose to the first reaction unit", choices=dosageunit_choices, blank=True, null=True)
-    drugdosagetext = models.TextField("Text describing drug dosage and frequency", max_length=2500, blank=True)
-    drugdosageform = models.CharField("Pharmaceutical form", max_length=250, blank=True)
+    drugdosagetext = models.TextField("Text describing drug dosage and frequency", max_length=500)
+    drugdosageform = models.CharField("Pharmaceutical form", max_length=500)
     drugadministrationroute = models.IntegerField("Route of administration", choices=administrationroute_choices, blank=True, null=True)
-    drugindication = models.CharField("Indication for use in the case", max_length=250, blank=True)
-    drugstartdateformat = models.CharField("Date format code", blank=True, max_length=225)
+    drugindication = models.CharField("Indication for use in the case", max_length=500)
+    drugstartdateformat = models.CharField("Date format code", blank=True, max_length=500)
     drugstartdate = models.DateField("Date when patient started taking the drug", blank=True, null=True)
-    drugenddateformat = models.CharField("Date format code", blank=True, max_length=225)
+    drugenddateformat = models.CharField("Date format code", blank=True, max_length=500)
     drugenddate = models.DateField("Date when patient stopped taking the drug", blank=True, null=True)
     drugtreatmentduration = models.FloatField("Duration of drug adminstration", blank=True, null=True)
     drugtreatmentdurationunit = models.IntegerField("Duration of drug administration unit", choices=interval_choices, blank=True, null=True)
