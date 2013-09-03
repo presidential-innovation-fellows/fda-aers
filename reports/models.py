@@ -123,7 +123,7 @@ interval_choices = Choices(
     )
 class Report(models.Model):
     safetyreportid = models.SlugField("Safey Report Unique Identifier", max_length=500, primary_key=True)
-    #importedfilename = models.CharField("Imported Filename Source", max_length=50, blank=True)
+    importedfilename = models.CharField("Imported Filename Source", max_length=50, blank=True)
     safetyreportversion = models.IntegerField("Safety Report Version Number", max_length=500, blank=True, null=True)
     primarysourcecountry = models.CharField("Country of the primary reporter", max_length=500, blank=True)
     occurcountry = models.CharField("Country where the event occured", max_length=500, blank=True)
