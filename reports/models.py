@@ -176,13 +176,11 @@ class Report(models.Model):
             
 class ReportDuplicate(models.Model):
     report = models.ForeignKey(Report)
-    hashid = models.TextField(primary_key=True)
     duplicatesource = models.CharField(max_length=500, blank=True,)
     duplicatenumb = models.CharField(max_length=500, blank=True)
 
 class Reaction(models.Model):
     report = models.ForeignKey(Report)
-    hashid = models.TextField(primary_key=True)
     reactionmeddrapt = models.CharField("MedDRA Preferred Term used to characterize the event", max_length=500, blank=True)
     reactionmeddraversionpt = models.CharField("MedDRA version for reaction/event term PT", max_length=500, blank=True)
     reactionoutcome_choices = Choices((1, 'recovered', _('Recovered/Resolved')), (2, 'recovering', _('Recovering/Resolving')), (3, 'not_recovered', _('Not Recovered/Not Resolved')), (4, 'recovered_sequelae', _('Recovered/Resolved with sequelae')), (5, 'fatal', _('Fatal')), (6, 'unknown', _('Unknown')))
@@ -190,7 +188,6 @@ class Reaction(models.Model):
     
 class Drug(models.Model):
     report = models.ForeignKey(Report)
-    hashid = models.TextField(primary_key=True)
     drugcharacterization_choices = Choices((1, 'suspect', _('Suspect')), (2, 'concomitant', _('Concomitant')), (3, 'interacting', _('Interacting')))
     drugcharacterization = models.IntegerField("Reported role of drug in adverse event", choices=drugcharacterization_choices, blank=True, null=True)
     medicinalproduct= models.CharField("Valid Trade Name if populated; otherwise, verbatim name used by reporter", max_length=500, blank=True)
