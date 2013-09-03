@@ -173,7 +173,6 @@ def loader(filename):
         for item in reportduplicates:
             duplicate = ReportDuplicate()
             duplicate.report = Report.objects.get(safetyreportid=report.safetyreportid)
-            duplicate.hashid = hash(item)
             try:
                 duplicate.duplicatesource = str(item.xpath('duplicatesource/text()')[0])
             except:
@@ -188,7 +187,6 @@ def loader(filename):
         for item in reactions:
             reaction = Reaction()
             reaction.report = Report.objects.get(safetyreportid=report.safetyreportid)
-            reaction.hashid = hash(item)
             try:
                 reaction.reactionmeddrapt = str(item.xpath('reactionmeddrapt/text()')[0])
             except:
@@ -207,7 +205,6 @@ def loader(filename):
         for item in drugs:
             drug = Drug()  
             drug.report = Report.objects.get(safetyreportid=report.safetyreportid)
-            drug.hashid = hash(item)
             try:
                 drug.drugcharacterization = int_validator(item.xpath('drugcharacterization/text()')[0])
             except:
