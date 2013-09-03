@@ -7,7 +7,6 @@ import datetime
 from lxml import etree
 
 from reports.models import Report, ReportDuplicate, Reaction, Drug
-from importer.models import Dataset
 
 def boolean_validator(value):
     if value == "1":
