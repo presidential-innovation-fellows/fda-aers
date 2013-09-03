@@ -180,7 +180,7 @@ class ReportDuplicate(models.Model):
     duplicatenumb = models.CharField(max_length=500, blank=True)
     
     class Meta:
-        unique_together = ("report", "duplicatesource")
+        unique_together = ("report", "duplicatesource", "duplicatenumb")
 
 class Reaction(models.Model):
     report = models.ForeignKey(Report)
@@ -190,7 +190,7 @@ class Reaction(models.Model):
     reactionoutcome = models.IntegerField("Outcome of Reaction/Event", choices=reactionoutcome_choices, blank=True, null=True)
     
     class Meta:
-        unique_together = ("report", "reactionmeddrapt")
+        unique_together = ("report", "reactionmeddrapt", "reactionoutcome")
     
 class Drug(models.Model):
     report = models.ForeignKey(Report)
@@ -222,4 +222,4 @@ class Drug(models.Model):
     drugadditional= models.NullBooleanField("Dechallenge outcome information (event abated after product use stopped or dose reduced)", blank=True)
     
     class Meta:
-        unique_together = ("report", "medicinalproduct")
+        unique_together = ("report", "medicinalproduct", "drugstartdate", "actiondrug")
